@@ -20,9 +20,9 @@ Now let's get its **residual graph**:
 
 <img src="images/eg_residual_graph.png" width="500" >
 
-Edges in red are called **_forward edges_** and they represent how much flow we can _push_, while edges in blue are called **_backward edges_** and they represent how much flow we can _take back_. If we recall the edge between between nodes ``0`` and ``1`` from our original flow network above, we can push at most ``4`` units into it and take back at most ``6`` units, which is why there are two edges, a red forward edge and blue backward edge, between ``0`` and ``1`` in our residual graph.
+Edges in red are called **_forward edges_** and they represent how much flow we can _push_, while edges in blue are called **_backward edges_** and they represent how much flow we can _take back_. If we recall the edge between nodes ``0`` and ``1`` from our original flow network above, we can push at most ``4`` units into it and take back at most ``6`` units, which is why in our residual graph there are two edges between ``0`` and ``1``, a red forward edge and blue backward edge.
 
-Next, we find a path from nodes ``0`` to ``5`` in the residual graph. There is one path: ``0``->``1``->``3``->``5``. The minimum capacity along this path, called the **_bottleneck_**, is ``min(4,19,4) = 4``. We follow this path in our original flow network and push ``4`` units along each edge. (If our path included a backward edge, which in this case it does not, then we would take away ``4`` units from the corresponding edge in the original flow network instead). Our resulting flow network becomes
+Next, we find a path from nodes ``0`` to ``5`` in the residual graph. There is one path: ``0``->``1``->``3``->``5``. The minimum capacity along this path, called the **_bottleneck_**, is ``min(4,19,4) = 4``. We follow this path in our original flow network and push ``4`` units along each edge. (If our path included a backward edge, then we would take away ``4`` units from the corresponding edge in the original flow network instead). Our resulting flow network becomes
 
 <img src="images/eg_flow_network_after.png" width="500" >
 
