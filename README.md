@@ -35,17 +35,17 @@ Our code would output:
 Input flow network G:
 node 0: [[1, 10, 6], [2, 10, 10]]
 node 1: [[3, 25, 6]]
-node 2: [[4, 15, 10], [5, 10, 0]]
+node 2: [[4, 15, 10]]
 node 3: [[5, 10, 6]]
-node 4: [[2, 6, 0], [5, 10, 0]]
-node 5: [[4, 10, 10]]
+node 4: [[1, 6, 0], [5, 10, 10]]
+node 5: []
 Flow network with max flow G_max:
 node 0: [[1, 10, 10], [2, 10, 10]]
 node 1: [[3, 25, 10]]
-node 2: [[4, 15, 10], [5, 10, 0]]
+node 2: [[4, 15, 10]]
 node 3: [[5, 10, 10]]
-node 4: [[2, 6, 0], [5, 10, 0]]
-node 5: [[4, 10, 10]]
+node 4: [[1, 6, 0], [5, 10, 10]]
+node 5: []
 max-flow value of G = 20
 ```
 
