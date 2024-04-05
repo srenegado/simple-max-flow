@@ -2,7 +2,7 @@
 A basic implementation of the [Ford-Fulkerson maximum-flow algorithm](https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm).
 
 ## Motivation
-This algorithm is the first solution to the [maximum flow problem](https://en.wikipedia.org/wiki/Maximum_flow_problem): the idea is to model a problem with a **flow network** and find a flow that **fits the constraints** and is **as large as possible**. Ford-Fulkerson does this by iteratively creating a "helper" graph called a **residual graph**  and finding the best path to put flow through. 
+This algorithm is the first solution to the [maximum flow problem](https://en.wikipedia.org/wiki/Maximum_flow_problem): the idea is to model a problem with a **flow network** and find a flow that **fits the constraints** and is **as large as possible**. Ford-Fulkerson does this by iteratively creating a "helper" graph called a **residual graph**  then finds the best path to put flow through. 
 
 Learning how the Ford-Fulkerson algorithm works provides a foundational understanding of maximum flow problems, which translate nicely into real world problems like airline scheduling and baseball elimination. 
 
